@@ -1,0 +1,68 @@
+/* watch.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #1a1a2e, #16213e);
+    font-family: 'Arial', sans-serif;
+}
+
+.digital-clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #0d1b2a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    width: 400px;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.week div {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    color: #00eaff;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.week .active {
+    font-weight: bold;
+    background: #00eaff;
+    color: #0d1b2a;
+    border-radius: 5px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: #00eaff;
+}
+
+.time div {
+    margin: 0 5px;
+}
+
+.dot {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
